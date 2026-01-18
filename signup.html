@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>sign up</title>
+    <link rel="icon" type="image/x-icon" href="home_IMG/C_logo2.png">
+    <link rel="stylesheet" href="signupstyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LcmS0gpAAAAACD4bCAGmUMnTQOM4ZI0JMcHBd4v"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="title">Sign Up</div>
+        <form action="process_signup.php" method="post">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">First Name</span>
+                    <input type="text" name="first_name" placeholder="Enter your first name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Last Name</span>
+                    <input type="text" name="last_name" placeholder="Enter your last name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="text" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Create Password</span>
+                    <input type="password" name="password" placeholder="Enter your create password" required>
+                </div>
+                <div class="input-box">
+                    <label for="birthday">Birthday:</label>
+                    <input type="date" id="birthday" name="birthday" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Confirm Password</span>
+                    <input type="password" name="confirm_password" placeholder="Confirm your password" required>
+                </div>
+            </div>
+            <div class="Role-details">
+                <input type="radio" name="role" id="dot-1" value="professional">
+                <input type="radio" name="role" id="dot-2" value="client">
+                <span class="Role-title">Role</span>
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="Role">Professional</span>
+                    </label>
+                    <label for="dot-2">
+                        <span class="dot two"></span>
+                        <span class="Role">Client</span>
+                    </label>
+                </div>
+            </div>
+            <input type="hidden" name="recaptchaToken" id="recaptchaToken">
+            <div class="button">
+                <input type="submit" name="send" value="Create Account">
+            </div>
+            <div class="signup_link">
+                Do you have an Account <a href="login.html">Login</a>
+            </div>
+        </form>
+        <div class="line"></div>
+        <div class="media-option">
+            <a href="#" class="field facebook">
+                <i class='bx bxl-facebook facebook-icon'></i>
+                <span>Facebook</span>
+            </a>
+        </div>
+        <div class="media-option">
+            <a href="#" class="field google">
+                <img src="google img.png" alt="" class="google-img">
+                <span>Google</span>
+            </a>
+        </div>
+    </div>
+</body>
+
+<script>
+    grecaptcha.ready(function() {
+        grecaptcha.execute('6LcmS0gpAAAAACD4bCAGmUMnTQOM4ZI0JMcHBd4v', {action: 'process_signup.php'})
+            .then(function(token) {
+                // Include the token in your form submission
+                console.log("recaptchaToken:", token);
+            });
+    });
+
+// error message display
+    // Check for the error parameter in the URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const error = urlParams.get('error');
+
+    // Display pop-up based on the error parameter
+    if (error === 'exists') {
+        alert("Email address already exists. Please use a different email.");
+    } else if (error === 'invalid_role') {
+        alert("Invalid role selected.");
+    } else if (error) {
+        alert(decodeURIComponent(error));
+    }
+</script>
+
+</html>

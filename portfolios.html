@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEDLUX</title>
+    <link rel="icon" type="image/x-icon" href="home_IMG/C_logo2.png">
+    <link rel="stylesheet" href="pf.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="popup.css">
+    <script src="js/main.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+</head>
+<body>
+    <div class="maindiv">
+             <!--*****Navigation header  Start-->
+     <div class="menu_bar">
+        <nav>
+        <div class="logo">
+            <img src="home_IMG/C_logo3.png" alt="">
+        </div>
+        <ul>
+            <li><a href="homes.php">Home</a></li>
+            <li><a href="aboutUs.html">About us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="#">More</a>
+                <div class="dropdown_menu">
+                    <ul>
+                        <li><a href="portfolios.html">Portfolio</a></li>
+                        <li><a href="professionals.html">Professionals</a></li>
+                        <li><a href="GetInTouch.html">Contact</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="signup.html">Sign up</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+        </nav>
+    </div>
+  
+    <!---*****Navigation header  End-->
+        </div>
+
+        <div class="container1">
+            <div id="slideshow-container">
+                <!-- Slideshow content goes here -->
+                <div class="mySlides">
+                    <img src="https://wedding-pictures.onewed.com/match/images/283583/600x600_1458758806409-image_-_Copy.full.jpg" alt="Nature Image 1">
+                </div>
+
+                <div class="mySlides">
+                    <img src="https://cdn.shopify.com/s/files/1/0300/7401/files/bellagala_3f561db2-22c3-4a4c-8dea-7b615c89bae8_1024x1024.jpg?16162227744205562285" alt="Nature Image 2">
+                </div>
+
+                <div class="mySlides">
+                    <img src="https://th.bing.com/th/id/OIP.rn1hVXBEHseYQg8Pv_ieqgHaE8?w=3567&h=2378&rs=1&pid=ImgDetMain" alt="Nature Image 3">
+                </div>
+
+                <div class="mySlides">
+                    <img src="https://th.bing.com/th/id/OIP.aB1uOafHHiGCu7qSJvJFJgHaE8?w=900&h=600&rs=1&pid=ImgDetMain" alt="Nature Image 4">
+                </div>
+            </div>
+            <div class="introduction">
+                <p >
+                Welcome to our event management company, where seamless execution meets creative brilliance. At the heart of our process is a meticulous approach that begins with understanding your unique vision and requirements. From conceptualization to planning, our experienced team ensures every detail is thoughtfully considered. We pride ourselves on a collaborative partnership, working closely with clients to tailor each event to perfection. With a focus on innovation, precision, and a commitment to exceeding expectations, we transform ideas into unforgettable experiences, leaving a lasting impact on every attendee. Welcome to a world where events come to life with precision and flair. 
+            </p>
+            </div>
+            
+        </div>
+
+        <div class="container2">
+            <div id="header">
+                <h1>Our Projects</h1>
+            </div>
+
+            <div id="project-container">
+
+                <div class="project">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2LQToZb3l9u5UynBTYvXfy-dfxSD-9uUlh5FwWuFIQK1gIpUgNS5H5Ig4H6VaPbEvFCQ&usqp=CAU" alt="Project 1">
+                    <div class="project-details">
+                        
+                        <p>Meticulously orchestrated a lavish gala with
+                           exquisite decor, celebrity guests, and flawless
+                           execution, creating a memorable and enchanting
+                           experience.</p>
+                        <div class="rating-box">
+                            <header>How your experience:</header>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+
+                                <div class="btns">
+                                    <Button onclick="Toggle1()" id="btnh1" class="btn like-btn"><i class="fas fa-heart"></i></Button>
+                                    
+                                </div>
+
+
+                            </div>
+                        </div>
+                    
+                        <script>
+                            document.addEventListener("DOMContentLoaded", function () {
+                                const stars = document.querySelectorAll(".stars i");
+                    
+                                stars.forEach((star, index1) => {
+                                    star.addEventListener("click", () => {
+                                        stars.forEach((star, index2) => {
+                                            index1 >= index2 ? star.classList.add("active") : star.classList.remove("active");
+                                        });
+                                    });
+                                });
+                            });
+                        </script>
+                        
+    <script>
+       
+
+    // First Like Button   
+       var btnvar1 = document.getElementById('btnh1');
+
+       function Toggle1(){
+                if (btnvar1.style.color =="red") {
+                    btnvar1.style.color = "grey"
+                }
+                else{
+                    btnvar1.style.color = "red"
+                }
+       }
+
+
+
+    </script>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLWzD5Ef7C8OqHyhT7gY-Yvnz53U5ODvsyp1o5wdhyjw&s" alt="Project 2">
+                    <div class="project-details">
+                        
+                        <p>Crafted a dream wedding with personalized touches, 
+                            enchanting themes, and impeccable coordination, 
+                            turning a couple's vision into a fairytale celebration.</p>
+                        <div class="rating-box">
+                            <header>How your experience:</header>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+
+                                <div class="btns">
+                                    <Button onclick="Toggle1()" id="btnh1" class="btn like-btn"><i class="fas fa-heart"></i></Button>
+                                    
+                                </div>
+                           
+                            </div>
+                        </div>
+                        <script>
+                            document.addEventListener("DOMContentLoaded", function () {
+                                const stars = document.querySelectorAll(".stars i");
+                    
+                                stars.forEach((star, index1) => {
+                                    star.addEventListener("click", () => {
+                                        stars.forEach((star, index2) => {
+                                            index1 >= index2 ? star.classList.add("active") : star.classList.remove("active");
+                                        });
+                                    });
+                                });
+                            });
+                        </script>
+
+    <script>
+       
+
+    // First Like Button   
+       var btnvar2 = document.getElementById('btnh2');
+
+       function Toggle2(){
+                if (btnvar2.style.color =="red") {
+                    btnvar2.style.color = "grey"
+                }
+                else{
+                    btnvar2.style.color = "red"
+                }
+       }
+
+
+</script>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <img src="https://d37b3blifa5mva.cloudfront.net/000_clients/131412/page/h800-131412Aed9mBOr.jpg" alt="Project 3">
+                    <div class="project-details">
+                        
+                        <p>create an innovative wedding planning website offering personalized services,vendor collaborations.</p>
+                        <div class="rating-box">
+                            <header>How your experience:</header>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+
+                                <div class="btns">
+                                    <Button onclick="Toggle1()" id="btnh1" class="btn like-btn"><i class="fas fa-heart"></i></Button>
+                                    
+                                </div>
+
+                            </div>
+                        </div>
+                    
+                        <script>
+                            document.addEventListener("DOMContentLoaded", function () {
+                                const stars = document.querySelectorAll(".stars i");
+                    
+                                stars.forEach((star, index1) => {
+                                    star.addEventListener("click", () => {
+                                        stars.forEach((star, index2) => {
+                                            index1 >= index2 ? star.classList.add("active") : star.classList.remove("active");
+                                        });
+                                    });
+                                });
+                            });
+                        </script>
+
+    <script>
+       
+
+    // First Like Button   
+       var btnvar3 = document.getElementById('btnh3');
+
+       function Toggle3(){
+                if (btnvar3.style.color =="red") {
+                    btnvar3.style.color = "grey"
+                }
+                else{
+                    btnvar3.style.color = "red"
+                }
+       }
+
+
+
+    </script>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container3">
+            <div id="terminals-container">
+                <div id="header">
+                    <h1>Testimonials</h1>
+                </div>
+                <div class="terminal-content">
+                    
+                </div>
+                <div class="videos">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Pc105ezzKuQ" frameborder="0" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/bJhKSX5zo9s" frameborder="0" allowfullscreen></iframe>
+                    <!-- Add more videos if needed -->
+                </div>
+                
+                
+                <div class="people">
+                    <div class="person">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfe90im-rSXOqL35di0xllmbO2sGuLBNJAnxl2sbsgHw&s" alt="Person 1">
+                        <div class="person-details">
+                            <h3>Pipuni & Thiwanka</h3>
+                            <p>"Our dream wedding became a reality, thanks to the meticulous planning and coordination by Wedux. Every detail was perfect, and the day exceeded our expectations!"</p>
+                            <!-- Add more details as needed -->
+                        </div>
+                    </div>
+                    <div class="person">
+                        <img src="https://i.pinimg.com/736x/4a/8d/44/4a8d442354e44adce13b81ab8af5f1fa.jpg" alt="Person 2">
+                        <div class="person-details">
+                            <h3>Prashanthi & Pulasthi</h3>
+                            <p>"Wedux made our wedding day stress-free and unforgettable. Their attention to detail and seamless organization allowed us to fully enjoy the celebration without any worries."</p>
+                            <!-- Add more details as needed -->
+                        </div>
+                    </div>
+                    <div class="person">
+                        <img src="https://i.pinimg.com/736x/8d/4c/95/8d4c958ea0e1596de8f7a2fe62ca1f9c.jpg" alt="Person 3">
+                        <div class="person-details">
+                            <h3>dilrukshi & Sashintha</h3>
+                            <p>"Exceptional service! Wedux not only met but exceeded our expectations. The team's professionalism, creativity, and dedication made our wedding day truly magical."</p>
+                            <!-- Add more details as needed -->
+                        </div>
+                    </div>
+                    <!-- Add more people if needed -->
+                </div>
+                    <!-- Add more people if needed -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+
+
+   <!-- -----------------------------chat bot---------------------------- -->
+
+
+   <button class="chat-btn" onclick="openbot()"><img src="imgbot1.png"></button>
+    
+
+   <div class="chat-form" id="chatfrom">
+       
+       <div class="bot_container">
+              
+           <div class="bot_media">
+               <img src="imgbot1.png" alt="">
+
+               <div class="bot_media_body">
+                   <span style="color: #fff; font-size: 30px;"><b>WedLux Chat Bot</b></span>
+                   <span style="color: #33f837;">Online</span>
+               </div>
+           </div>
+
+           <!-------------Masseag container-------------------->
+
+           <div id="chatcontainer" class="container border maseg_container">
+               <!-- <div class="botM w-50 shadow-sm"  >
+                   <span><b>Chat:</b></span>
+                   <span >hi there.. its wedlux Bot. How can i help you?</span>
+               </div> -->
+       
+           
+               <!-- <div class="UserM w-50 shadow-sm" >
+                       <span>You:</span>
+                       <span>I'm fine thank you?</span>
+               </div>  -->
+
+           </div>
+
+           <div class="input-group" >
+                   <input id="textbox" type="text" class="from-control">
+
+                   <div class="input-group-append">
+                       <button id="sendBtn" type="button" class="btn btn-primary">Send</button>
+                       <button type="button" class="btn btn-primary" onclick="closebot()">Close</button>
+                   </div>
+           </div>
+
+           
+       </div>
+
+       
+
+   </div>
+
+         
+        
+
+
+ 
+    
+         <!-----------Footer------------------>
+
+         <footer class="footer-distributed">
+
+        
+    
+            <div class="footer-left">
+                <img src="home_IMG/C_logo3.png" alt="">
+        
+              <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>44/116 Main Street</span> Colombo 04,Sri Lanka</p>
+              </div>
+        
+              <div>
+                <i class="fa fa-phone"></i>
+                <p>+94 112 112 000</p>
+              </div>
+        
+              <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="wedlux.pvt.ltd@gmail.com">wedlux.pvt.ltd@gmail.com</a></p>
+              </div>
+        
+            </div>
+    
+            <div class="footer-center">
+        
+                
+          
+                <p class="footer-links">
+                  
+                  <a href="homes.php" class="link-1">Home</a>
+                  <a href="aboutUs.html">About Us</a>
+                  <a href="">Services</a>
+                  <a href="portfolios.html">Portfolio</a>
+                  <a href="signup.html">Sign Up</a>
+                  <a href="GetInTouch.html">Contact</a>
+                
+                </p>
+          
+                
+              </div>
+        
+            <div class="footer-right">
+        
+              <p class="footer-company-about">
+                <span>About the company</span>
+                Welcome to Wedlux, where dreams become unforgettable experiences. With a focus on love, joy, and special moments, we pride ourselves as your dedicated event management partner. Count on us to curate exceptional experiences aligned with your unique vision.
+              </p>
+        
+              <div class="footer-icons">
+        
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-x"></i></a>
+                <a href=""><i class="fa-brands fa-google-plus"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                
+        
+              </div>
+        
+            </div>
+    
+            <div class="copy_right_p">
+                <p >&copy; 2023 Wedlux. All rights reserved.</p>
+            </div>
+    
+            
+            
+        
+          </footer>
+
+    <script>
+        let slideIndex = 0;
+
+        function showSlides() {
+            let i;
+            const slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change slide every 2 seconds
+        }
+
+        showSlides();
+    </script>
+</body>
+</html>
