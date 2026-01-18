@@ -1,0 +1,153 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+* {
+    font-family: Open Sans;
+    margin: 0;
+    padding: 0;
+  }
+
+
+
+  /* --------------chat bot-------------- */
+  /* pop up icon */
+
+.chatbot_link img {
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 30px;
+    width: 200px;
+    display: flex;
+} 
+
+/*------------Chat bot-----------*/
+.chat-btn img {
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 30px;
+    width: 200px;
+}
+.chat-form{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    z-index: 9;
+    border-radius: 10px;
+}
+.btn-cancel img{
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+
+/* phpbot.css */
+
+
+
+.bot_container{
+    width: 600px;
+    height: 750px;
+    background-color:#3F2A3c;
+    border-radius: 20px;
+    margin:auto;
+    
+    
+    
+    
+}
+
+
+
+.bot_media_body h5{
+    font-size: 20px;
+    margin-left: 130px;
+    margin-top: -20%;
+
+}
+
+.bot_media_body span{
+    margin-left: 170px;
+    
+    
+    
+}
+.bot_container .bot_media img{
+    margin-left: 10px;
+    width: 200px;
+    padding-top: 50px;
+
+}
+
+.maseg_container{
+    margin-top: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+    height: 350px;
+    background-color: antiquewhite;
+    overflow: auto;
+}
+
+/*    chat bot masages    */
+
+.botM{
+    float: left;
+    margin:10px; 
+    padding: 5px;
+    overflow: hidden;
+    
+    
+}
+.botM span{
+    
+    border-radius: 5px;
+    margin-top: 10px;
+    padding:10px;
+    
+}
+.UserM{
+    float: right;
+    margin:10px; 
+    padding: 5px;
+    overflow: auto;
+    overflow: hidden;
+
+}
+.UserM span{
+    
+    border-radius: 5px;
+    margin-top: 10px;
+    padding:10px;
+}
+
+
+/*  buttons   */
+
+.input-group-append button{
+    background-color: blueviolet;
+    border-color:blueviolet ;
+    margin-top: 10px;
+}
+
+.input-group input{
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 442px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+
+
+

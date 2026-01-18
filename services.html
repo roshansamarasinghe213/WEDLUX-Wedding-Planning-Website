@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+    <link rel="icon" type="image/x-icon" href="home_IMG/C_logo2.png">
+    <link rel="stylesheet" href="StyleSheetServicePage.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- chat bot links -->
+    <link rel="stylesheet" href="popup.css">
+    <script src="js/main.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Page</title>
+</head>
+
+<body>
+
+    <div class="menu_bar">
+        <nav>
+        <div class="logo">
+            <img src="home_IMG/C_logo3.png" alt="">
+        </div>
+        <ul>
+            <li><a href="homes.php">Home</a></li>
+            <li><a href="aboutUs.html">About us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="#">More</a>
+                <div class="dropdown_menu">
+                    <ul>
+                        <li><a href="portfolios.html">Portfolio</a></li>
+                        <li><a href="professionals.html">Professionals</a></li>
+                        <li><a href="GetInTouch.html">Contact</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="signup.html">Sign up</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+        </nav>
+    </div>
+
+
+    <!-- Section 1: Image Slideshow -->
+    <section>
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <img src="Images/Slide/1.jpg" >
+            </div>
+            <div class="mySlides">
+                <img src="Images/Slide/2.jpg" >
+            </div>
+            <div class="mySlides">
+                <img src="Images/Slide/3.jpg" >
+            </div>
+            <div class="mySlides">
+                <img src="Images/Slide/4.jpg">
+            </div>
+            <div class="mySlides">
+                <img src="Images/Slide/5.jpg">
+            </div>
+            <div class="mySlides">
+                <img src="Images/Slide/6.jpg">
+            </div>
+            <div class="mySlides">
+                <img src="Images/Slide/7.jpg">
+            </div>                                    
+
+            <!-- Manual navigation buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <!-- Automatic slideshow script -->
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[slideIndex - 1].style.display = "block";
+            }
+
+            // Auto slideshow
+            setInterval(function () {
+                plusSlides(1);
+            }, 5000);
+        </script>
+    </section>
+
+    
+    <!-- Section 2: Categories -->
+    <section>
+        <div class="Packages">
+           <h4>Wedding Packages</h4>  
+        </div>
+        <div class="categories">
+            <div class="category">
+                <a href="/bronze">
+                <img src="Images/bronze.jpg"></a> <br>
+                <input type="checkbox" class="read-more-checkbox" id="read-more-toggle-1">
+                <label for="read-more-toggle-1" class="read-more-label">Package Info</label>
+                <div class="read-more-content">
+                    <div class="package">
+                        <div class="package-title">Bronze Package</div>
+                        <div class="sub-package">
+                            • Weddding hotels<br>
+                            • Decorations<br>
+                            • Photography<br>
+                            • Wedding cars<br>
+                            • DJ events<br>
+                            </ul>
+                        </div>
+                        <div class="price">Package cost: LKR 500,000</div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="category">
+                <a href="/silver">
+                <img src="Images/silver.jpg"></a><br>
+                <input type="checkbox" class="read-more-checkbox" id="read-more-toggle-2">
+                <label for="read-more-toggle-2" class="read-more-label">Package Info</label>
+                <div class="read-more-content">
+                    <div class="package">
+                        <div class="package-title">Silver Package</div>
+                        <div class="sub-package">
+                            • Wedding hotels<br>
+                            • Outdoor wedding ceremony types<br>
+                            • Decorations<br>
+                            • Dj event or Wedding bands<br>
+                            • Catering services<br>
+                            • Dancing events<br>
+                            • Photography & Videography<br>
+                            • Wedding cars<br>
+                            </div>
+
+                        <div class="price">Package cost: LKR 1,000,000</div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="category">
+                <a href="/gold">
+                <img src="Images/gold.jpg"></a><br>
+                <input type="checkbox" class="read-more-checkbox" id="read-more-toggle-3">
+                <label for="read-more-toggle-3" class="read-more-label">Package Info</label>
+                <div class="read-more-content">
+                    <div class="package">
+                        <div class="package-title">Gold Package</div>
+                        <div class="sub-package">
+                            • Full wedding planning<br>
+                            • Full wedding coordinating<br>
+                            • Premium Wedding hotels<br>
+                            • Honeymoon packages<br>
+                            • Outdoor wedding ceremony types<br>
+                            • Premium Decorations<br>
+                            • Premium Wedding bands<br>
+                            • Premium Catering services<br>
+                            • Dancing events<br>
+                            • Premium Photography & Videography<br>
+                            • Premium Wedding cars<br>
+                            • Premium wedding dress designers<br>
+                            • Premium Saloons services<br>
+                            </div>
+                        <div class="price">Package cost: LKR 2,500,000</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<hr>
+    <!-- Section 3: Key Services -->
+    <section>
+        <div class="services">
+            <div class="service">
+              <h3>Venue Selection and Design</h3>
+              <p>At WEDLUX, we understand that choosing the right venue and designing a space that reflects your vision are crucial elements for a perfect wedding. Our expert team specializes in meticulous venue selection, considering your preferences, guest count, and theme. Once we've found the ideal setting, our design team steps in to create a magical atmosphere tailored to your unique style. From elegant ballrooms to rustic outdoor spaces, we curate every detail to ensure your wedding venue is not just a location but a canvas that captures the essence of your love story. Let us transform your dreams into reality with our unparalleled venue selection and design services.</p>
+            </div>
+            
+            <div class="service">
+              <h3>Catering and Menu Planning</h3>
+              <p>We understand the importance of exquisite dining experiences for your special day. Our catering services go beyond providing delicious food – we craft culinary journeys that reflect your unique style and preferences. From elegant plated dinners to casual buffets, our expert team collaborates with top chefs to curate menus that tantalize the taste buds and leave a lasting impression. We prioritize quality, creativity, and seamless execution to ensure your wedding feast is a culinary delight that complements the overall magic of your celebration. Let us take care of the details, so you can savor every moment.</p> 
+            </div>  
+          
+            <div class="service">
+              <h3>Event Coordination and Management</h3>
+              <p>Our professional event coordinators and managers handle logistics, vendor coordination, budget management, and on-site supervision, allowing clients to enjoy their events stress-free. We specialize in creating memorable experiences, whether it's a wedding, corporate gathering, conference, or social celebration. With attention to detail and a commitment to excellence, we transform visions into reality, making each event a unique and unforgettable occasion.</p>
+            </div>
+          </div>
+    </section>
+
+    <!-- Section 4: Wedding Items -->
+    <section>
+        <div class="wedding-items-set">
+            <h2>Wedding Items</h2>
+        <div class="wedding-items">
+            <a href="/lighting">
+              <img src="Images/Items/lighting.jpg"></a>
+              <h4>Lighting</h4>
+              <p>Elevate your wedding with enchanting
+                lighting. From romantic string lights
+                 to vibrant LEDs, create a magical
+                 atmosphere that enhances every moment
+                  and leaves a lasting impression.
+              
+         </div>
+          
+            <div class="wedding-items">
+                <a href="/catering">
+              <img src="prof_IMG/New folder/img15.jpg"></a>
+              <h4>Catering</h4>
+              <p>Elevate your wedding with our
+                 exquisite catering. Indulge in a
+                  personalized menu, impeccable service,
+                   and a feast of unforgettable flavors for
+                    your special day.</p>
+              
+            </div>
+
+          
+          <div class="wedding-items">
+            <a href="/Dressing">
+              <img src="Images/Items/Dressing.jpg"></a>
+              <h4>Dressing</h4>
+              <p>Step into elegance on your big
+                 day with our exquisite wedding dresses.
+                  Meticulously crafted,ensuring
+                  you shine with grace and
+                    style as you say 'I do'.</p>
+              
+         </div>
+          
+            <div class="wedding-items">
+                <a href="/cars">
+              <img src="Images/Items/Cars.jpg"></a>
+              <h4>Weddding Cars</h4>
+              <p>Cherish every moment 
+                of your wedding day 
+                with our stunning fleet of 
+                 chauffeur-driven cars. From classic to 
+                 modern, our stylish rides ensure you arrive 
+                 in elegance, making your journey 
+                 as memorable as the 
+                 celebration itself.
+                 Choose luxury, choose love.</p>
+              
+            </div>
+        </div>      
+    </section>
+<hr>
+    <!-- Section 5: Hotels -->
+    <section>
+        <div class="hotelh">
+        <h2>Hotels</h2>
+    </div>
+    <div class="hotels">
+       <div class="hotel">
+        <div class="hotel-name">
+            <h2>The Kingsbury Hotel</h2>
+        </div>
+        <a href="/kingsbury">
+            <img src="Images/Hotels/kingsbury.jpg" alt="Hotel 1"></a>
+            <p>Located in the capital city of Colombo, just 35 km away from the Bandaranaike International Airport, The Kingsbury Hotel is the most sought-after five-star hotel, ideal for both business and leisure travelers. With easy access to One Galle Face shopping mall, Colombo City Centre and walking distance to Galle Face Green, World Trade Centre and the Dutch Hospital Precinct, The Kingsbury Hotel in Colombo guarantees a luxurious and comfortable stay. The hotel boasts 229 spacious rooms and suites with panoramic ocean views and a host of restaurants and bars. The Honey Beach Club features the best DJ’s in town, the Tavern provides local favourites and Sky Lounge is the perfect rooftop bar for sundowners with friends. Dining options are endless as the Harbour Court features a range of international and local cuisine with one of the best buffets in town, The Ocean serves up the freshest platters of seafood, The Kings Steakbar offers rare curated boards of prime steak fit for royalty, Tenku serves the most genuine Japanese cuisine and sake while the resident Chinese Chefs at Yue Chuan showcase a range of Cantonese and Szechuan fare. Churros boasts mouth-watering pastries, desserts and high tea and The Kingsbury Indulgence portal delivers five-star cuisine to your doorstep.</p>
+        </div>
+
+        <div class="hotel">
+            <div class="hotel-name">
+                <h2>Galle Face Hotel</h2>
+            </div>
+            <a href="/galle-face-hotel-colombo">
+            <img src="Images/Hotels/galle-face-hotel-colombo.jpg" alt="Hotel 1"></a>
+            <p>Since its beginnings in 1864 The Galle Face Hotel has been part of Colombo heritage, catering to world travellers, the property stands as one of the most storied hotels in Asia. Oozing history from every pore, timeless traditions and character abounds in each of our 156 guestrooms, restored to reflect the Galle Face Hotel’s rich past. Many rooms offer spectacular sea views, some with private balcony, and all furnished in elegant colonial style décor. Whether a sophisticated afternoon tea at The Verandah or dinner at 1864 Restaurant, a Pimms on the Chequerboard or a Cuban experience at King of the Mambo, dining experiences are a ‘must do’ whilst in Colombo. A wedding day at the Grand Ballroom or Jubilee Ballroom makes for a truly memorable and occasion. Come and experience the magic of The Galle Face Hotel on your next visit to Sri Lanka.</p>
+        </div>
+
+        <div class="hotel">
+            <div class="hotel-name">
+                <h2>Jetwing Sea</h2>
+            </div>
+            <a href="/jetwing-sea">
+            <img src="Images/Hotels/jetwing-sea.jpg" alt="Hotel 1"></a>
+            <p>With the beach at your doorstep, Jetwing Sea offers an idyllic coastal retreat along the soft golden sands of Negombo and makes for an enchanting holiday home where one can work, play and fall in love. Enjoy exotic seafood, plan a sunset wedding, or unwind at the rooftop spa, serenaded by the sounds of the Indian Ocean. This enchanting property is a peaceful retreat equipped with modern essentials to complement your lifestyle. With a number of luxurious facilities such as a purpose-built conference hall, two swimming pools, and an opulent rooftop spa, Jetwing Sea blends the finest of tropical luxury with traditional Sri Lankan hospitality on the buzzing beach strip of Negombo.</p>
+        </div>
+
+        <div class="hotel">
+            <div class="hotel-name">
+                <h2>Anantara Peace Haven Tangalle Resort</h2>
+            </div>
+            <a href="/Anantara-Peace-Haven-Tangalle-Resort">
+            <img src="Images/Hotels/evening-pool-view.jpg" alt="Hotel 1"></a>
+            <p>Hidden on a rocky outcrop along a secluded stretch of Sri Lanka's southernmost coastline, Anantara Peace Haven Tangalle Resort is set amidst a 42 acre coconut plantation and golden crescent beach, with glorious Indian Ocean views. Escape to this naturally exclusive hideaway for exotic beach life in a tranquil world of your own, or live out your explorer dreams, with easy access to iconic cultural sites and spectacular national parks, as well as the thrill of turtle and whale watching trips. Practice holistic exercises on the shore and explore the local area by bicycle or tuk-tuk. Relax in paradise at our tropical pool, a refreshing cocktail in hand. Little ones can play happily at the children's and teens' club, leaving you free to indulge in sensual spa pampering and specialist treatments at the Ayurvedic and reflexology centres. Savour the charms and flavours of island life, partaking in the colonial tradition of high tea and creating authentic Sri Lankan cuisine in a master chef cooking class. For refined international tastes, delight in gourmet Italian dining on an ocean facing cliff top, Sri Lankan inspired teppanyaki beside the beach, private wine cellar degustation dinners and tailored Dining by Design occasions. Anantara Peace Haven Tangalle Resort has been recognised in Condé Nast Traveler US’s prestigious 2017 Hot List as one of the best new hotels in the world, as well as one of the hottest new openings in Sri Lanka. This is the fourth significant international award the resort has won since opening. The property has established itself as one of the leading resorts on the island to travellers both from abroad and locally. Due to this strong support, Anantara Tangalle has achieved significant international and local recognition, including in Condé Nast Traveler Readers’ Choice Awards in 2016, being named on DestinAsian magazine’s 2016 Luxe List and being awarded by Wine Spectator in 2016 for its Il Mare restaurant.</p>
+        </div>
+    </div>
+    </section>
+
+<hr>
+    <!-- Section 6: Wedding Themes -->
+    <section>
+        <div class="theme">
+        <h2>Popular Themes</h2>
+    </div>
+    <div class="weddingt">
+        <div class="wedding-theme">
+            <a href="/Classic">
+            <img src="Images/Themes/Classic.jpg"></a>
+            <h2>Classic</h2>
+            <p>Timeless Sophistication: A classic and elegant wedding theme never goes out of style. This theme is characterized by refined details, traditional decor, and a sophisticated ambiance. It's an excellent choice for couples who appreciate a formal and timeless setting.</p>
+        </div>
+        <div class="wedding-theme">
+            <a href="/Vintage">
+            <img src="Images/Themes/Vintage.jpg"></a>
+            <h2>Vintage</h2>
+            <p>Charm and Simplicity: Ideal for couples who appreciate a down-to-earth and cozy atmosphere. Rustic weddings often feature barns or outdoor settings, with elements like burlap, lace, and wildflowers. It's a perfect choice for a relaxed yet stylish celebration.</p>
+        </div>
+        <div class="wedding-theme">
+            <a href="/Whimsical">
+            <img src="Images/Themes/Whimsical.jpg"></a>
+            <h2>Whimsical</h2>
+            <p>Free-Spirited Romance: Perfect for couples who want a wedding that reflects their carefree and artistic spirits. Bohemian weddings often include eclectic decor, vibrant colors, and a relaxed vibe. It's a wonderful choice for those who seek a more unconventional and whimsical celebration.</p>
+        </div>
+    </div>
+    </section>
+
+   <!-- -----------------------------chat bot---------------------------- -->
+
+
+   <button class="chat-btn" onclick="openbot()"><img src="imgbot1.png"></button>
+    
+
+   <div class="chat-form" id="chatfrom">
+       
+       <div class="bot_container">
+              
+           <div class="bot_media">
+               <img src="imgbot1.png" alt="">
+
+               <div class="bot_media_body">
+                   <span style="color: #fff; font-size: 30px;"><b>WedLux Chat Bot</b></span>
+                   <span style="color: #33f837;">Online</span>
+               </div>
+           </div>
+
+           <!-------------Masseag container-------------------->
+
+           <div id="chatcontainer" class="container border maseg_container">
+               <!-- <div class="botM w-50 shadow-sm"  >
+                   <span><b>Chat:</b></span>
+                   <span >hi there.. its wedlux Bot. How can i help you?</span>
+               </div> -->
+       
+           
+               <!-- <div class="UserM w-50 shadow-sm" >
+                       <span>You:</span>
+                       <span>I'm fine thank you?</span>
+               </div>  -->
+
+           </div>
+
+           <div class="input-group" >
+                   <input id="textbox" type="text" class="from-control">
+
+                   <div class="input-group-append">
+                       <button id="sendBtn" type="button" class="btn btn-primary">Send</button>
+                       <button type="button" class="btn btn-primary" onclick="closebot()">Close</button>
+                   </div>
+           </div>
+
+           
+       </div>
+
+       
+
+   </div>
+         <!-----------Footer------------------>
+
+         <footer class="footer-distributed">
+
+        
+    
+            <div class="footer-left">
+                <img src="home_IMG/C_logo3.png" alt="">
+        
+              <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>44/116 Main Street</span> Colombo 04,Sri Lanka</p>
+              </div>
+        
+              <div>
+                <i class="fa fa-phone"></i>
+                <p>+94 112 112 000</p>
+              </div>
+        
+              <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="wedlux.pvt.ltd@gmail.com">wedlux.pvt.ltd@gmail.com</a></p>
+              </div>
+        
+            </div>
+    
+            <div class="footer-center">
+        
+                
+          
+                <p class="footer-links">
+                  
+                  <a href="homes.php" class="link-1">Home</a>
+                  <a href="aboutUs.html">About Us</a>
+                  <a href="">Services</a>
+                  <a href="portfolios.html">Portfolio</a>
+                  <a href="signup.html">Sign Up</a>
+                  <a href="GetInTouch.html">Contact</a>
+                
+                </p>
+          
+                
+              </div>
+        
+            <div class="footer-right">
+        
+              <p class="footer-company-about">
+                <span>About the company</span>
+                Welcome to Wedlux, where dreams become unforgettable experiences. With a focus on love, joy, and special moments, we pride ourselves as your dedicated event management partner. Count on us to curate exceptional experiences aligned with your unique vision.
+              </p>
+        
+              <div class="footer-icons">
+        
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-x"></i></a>
+                <a href=""><i class="fa-brands fa-google-plus"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                
+        
+              </div>
+        
+            </div>
+    
+            <div class="copy_right_p">
+                <p >&copy; 2023 Wedlux. All rights reserved.</p>
+            </div>
+    
+            
+            
+        
+          </footer>
+</body>
+
+</html>
+
+</body>
+</html>

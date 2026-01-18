@@ -1,0 +1,152 @@
+
+body {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #8400ff;
+    color: #ffffff; 
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    z-index: 1000;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.popup.active,
+.overlay.active {
+    display: block;
+}
+
+.popup h2 {
+    color: #ffffff; /* Heading color */
+}
+
+.popup p {
+    margin-bottom: 10px;
+}
+
+.popup ul {
+    padding: 0;
+    list-style: none;
+}
+
+.popup li {
+    margin-bottom: 5px;
+}
+
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #000000;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.popup-close:hover {
+    color: #000000;
+
+}
+
+.popup button {
+    background-color: #9900aa; 
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup button:hover {
+    background-color: #685582;
+}
+
+
+.popup i {
+    font-size: 48px; 
+    color: #5E104F; 
+    margin-bottom: 20px;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.popup {
+    display: none;
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-image: url("bgimsge1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: -220px;
+    background-position-y: -82px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.popup i {
+    font-size: 70px; /* Adjust the size of the icon */
+    color: #006eff; /* Purple color, you can change this */
+    margin-top: 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+    .highlight {
+        background-color: yellow;
+    }
+
+    

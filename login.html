@@ -1,0 +1,71 @@
+<html>
+<head>
+    <title>Login</title>
+    <link rel="icon" type="image/x-icon" href="home_IMG/C_logo2.png">
+    <link rel="stylesheet" href="login.css">
+    <script src="https://www.google.com/recaptcha/api.js?render=6LcmS0gpAAAAACD4bCAGmUMnTQOM4ZI0JMcHBd4v"></script>
+
+</head>
+<body>
+    <div class="center">
+        
+        <div class="form-box">
+            <h1>Login</h1>
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="userlogin1()">Client</button>
+                <button type="button" class="toggle-btn" onclick="professionalslogin2()">professionals</button>
+            </div> 
+            <form method="POST" action="login.php" id="userlogin" class="input-group">
+                <input name="User_Email" type="text" class="input-field" placeholder="Email Address" required>
+                <input name="User_Password" type="password" class="input-field" placeholder="Password" required>
+                <div class="pass">Forgot Password?</div>
+                <button type="submit" class="submit-btn"> Login</button>
+                <div class="signup_link">
+                    or <a href="signup.html">Create an Account</a>
+
+                </div>
+            </form>
+            <form method="POST" action="login.php" id="professionalslogin" class="input-group">
+                
+                    <input name="Prof_Email" type="text" class="input-field" placeholder="Email Address" required>
+                <input name="Prof_Password" type="password" class="input-field" placeholder="Password" required>
+
+                <div class="pass">Forgot Password?</div>
+                <button type="submit" class="submit-btn"> Login</button>
+                <div class="signup_link">
+                    or <a href="signup.html">Create an Account</a>
+
+                </div>
+                <input type="hidden" name="recaptchaToken" id="recaptchaToken">
+            </form>
+        </div>    
+    </div>
+    <script>
+        var x = document.getElementById("userlogin");
+        var y = document.getElementById("professionalslogin");
+        var z = document.getElementById("btn");
+
+        function professionalslogin2(){
+          x.style.left = "-400px";
+          y.style.left = "50px";
+          z.style.left = "110px";
+        }
+        function userlogin1(){
+          x.style.left = "50px";
+          y.style.left = "450px";
+          z.style.left = "0px";
+        }
+    </script>
+
+<script>
+    grecaptcha.ready(function() {
+        grecaptcha.execute('6LcmS0gpAAAAACD4bCAGmUMnTQOM4ZI0JMcHBd4v', {action: 'process_signup.php'})
+            .then(function(token) {
+                // Include the token in your form submission
+                console.log("recaptchaToken:", token);
+            });
+    });
+</script>
+</body>
+</html>

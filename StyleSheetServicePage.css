@@ -1,0 +1,664 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+
+/* header */
+
+.menu_bar{
+    background: #f5f5f5;
+  padding:0px;  
+  }
+  
+
+  nav {
+    background-color: #333;
+    color: #fff;
+    height: 120px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5%;
+    border-bottom: 1px solid #633f81;  
+    border-top: 1px solid #633f81;
+  }
+  
+  
+  
+  .logo img {
+  float: left;
+    width: 170px;
+    height: 150px;
+  margin-left: 20px;
+  
+  }
+  
+  .logo h3 span{
+  color: #a92289;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    padding: 10px 20px;
+    position: relative;
+  }
+  
+  nav ul li a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s;
+  }
+  
+  nav ul li:hover {
+  background-color: #444; 
+  }
+  
+  .dropdown_menu {
+    display: none; /* Hide the dropdown initially */
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #333;
+  }
+  
+  .dropdown_menu ul {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  .dropdown_menu ul li {
+    width: 150px;
+    padding: 10px;
+  }
+  nav ul li:hover .dropdown_menu {
+    display: block;
+    z-index: 1;
+  }
+  
+  
+  /* header end */
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Open Sans;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+}
+
+
+.section1 {
+    margin-bottom: 40px;
+}
+
+
+.slideshow-container {
+    position: relative;
+    width: 100%; 
+    margin: auto;
+    
+}
+
+.mySlides {
+    display: none;
+    text-align: center;
+    max-width: 100%;
+    height: 100%;
+    transition: 5s ease-in-out;
+    object-fit: fill;
+}
+
+
+.mySlides img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+@keyframes slideAnimation {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 16px;
+    font-size: 90px;
+    cursor: pointer;
+    color: #ffffff70;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-radius: 10px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+hr{
+    margin: 5px;
+}
+
+/* Section 2: Categories */
+.categories {
+    display: flex;
+    margin: auto;
+    padding-bottom: 20px;
+  }
+  
+  .Packages h4 , .wedding-items-set h2{
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px ;
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 5px;
+    color: #5b2d81;
+  }
+  
+  .category {
+    position: relative;
+    /* margin: auto; */
+    text-align: center;
+  }
+  
+  .category img {
+    width: 80%;
+    height: auto;
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 30px;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px;
+  }
+  
+  .category img:hover {
+    transform: scale(1.05);
+  }
+  
+  
+  .read-more-checkbox {
+    display: none;
+  }
+  
+  .read-more-label {
+    position: relative;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    color: white;
+    background-color: #8c59a1;
+    border-radius: 20px;
+    
+    cursor: pointer;
+  }
+  
+  .read-more-content {
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+  
+  .read-more-checkbox:checked + .read-more-label + .read-more-content {
+    display: block;
+    max-height: 1000px;
+  }
+  
+  .package {
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .sub-package {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: left;
+    padding-left: 85px;
+  }
+
+  
+  .package-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    color: #633f81;
+  }
+  
+  .price {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #78079bef;
+  }
+  
+
+
+/* Section 3: Key Services */
+.services {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.service {
+    text-align: center;
+    margin: 5px;
+    padding: 20px;
+    border-left: 1px solid rgb(255, 208, 255);
+    border-radius: 5px;
+    width: 30%; 
+    transition: background-color 0.3s ease-in-out;
+}
+
+.service:hover {
+    background-color: #f0f0f0; 
+}
+
+.service h3 {
+    font-size: 26px;
+    margin-bottom: 10px; 
+    color: #5b2d81;
+    font-weight: 600;
+}
+
+.service p {
+    text-align: justify;
+    font-size: 16px; 
+    color: #555;
+}
+
+
+/* Section 4: Wedding Items */
+.wedding-items-set{
+    margin: 10px;
+}
+
+.wedding-items-set h2{
+  text-align: center;
+  color: #5b2d81;
+  font-size: 40px;
+  font-weight: 600;
+}
+.wedding-items { 
+    margin: 50px;
+    width: auto;
+    height: 500px;
+    display: inline-block;
+    text-align: center;
+
+}
+
+.wedding-items img {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width:200px;
+    height: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.wedding-items:hover img {
+    transform: scale(1.05);
+}
+
+.wedding-items h4{
+    text-align: center;
+    color: #8c59a1;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.wedding-items p{
+    display: flex;
+    text-align: justify;
+    margin: 5px;
+    width: 250px;
+    padding: 5px;
+    line-height: 20px;
+    color: #555;
+    position: relative;
+
+}
+
+/* Section 5: Hotels */
+.hotelh h2 {
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 20px;
+    padding-top: 20px ;
+    font-weight: 600;
+    color: #5b2d81;
+}
+
+.hotels {
+    display: inline-block;
+}
+
+
+.hotel {
+    text-align: center;
+    margin: 30px;
+}
+
+.hotel-name{
+    text-align: center;
+    color: #8c59a1;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.hotel img {
+    margin: 20px;
+    height: 500px;
+    width: 800px;
+    border-radius: 1000px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hotel p{
+    color: #555;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.hotel:hover img {
+    transform: scale(1.05);
+}
+
+
+
+/* Section 6: Wedding Themes */
+
+.theme h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: #5b2d81;
+}
+
+.weddingt {
+    display: flex;
+}
+
+.wedding-theme h2{
+  color: #8c59a1;
+}
+
+.wedding-theme {
+    border: 2px solid rgb(255, 208, 255);
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.wedding-theme img {
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin-top: 20px;
+    width: 90%;
+    height: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.wedding-theme p{
+    color: #555;
+    text-align: justify;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.wedding-theme:hover img {
+    transform: scale(1.05);
+}
+
+
+@media only screen and (max-width: 768px) {
+    .categories {
+        flex-wrap: wrap;
+    }
+
+    .category {
+        margin-right: 10px;
+        margin-bottom: 10px;
+        flex: 0 0 calc(50% - 10px);
+    }
+}
+
+
+/*-----------Footer css--------*/
+
+
+
+.footer-distributed{
+	background: #333;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 14px sans-serif;
+	padding: 55px 50px 20px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-center{
+	width: 30%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color: #a92289;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+
+}
+
+.footer-distributed .footer-links a{
+	display:block;
+	line-height: 1.8;
+    font-weight:400;
+	text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #222;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 35%;
+}
+
+.footer-distributed .footer-left i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-left i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-left p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-left p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-left p a{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a{
+  font-weight:300;
+  font-size: 14px;
+  color: #fff;
+  display: block;
+  padding: 5px;
+}
+
+.footer-distributed .footer-links .link-1 {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 25%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-left i{
+		margin-left: 0;
+	}
+
+}
+.copy_right_p{
+    text-align: center;
+    margin-top: 50px;
+    color: #fff;
+}
+
+.footer-left img{
+    margin-bottom: 30px;
+    margin-left: 30px;
+    width: 180px;
+    height: 160px;
+}
